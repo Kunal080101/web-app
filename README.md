@@ -1,21 +1,3 @@
-Flow of the Project
-Web-app/
-├──backend/
-├  ├──app.py
-├  ├── Dockerfile
-├  ├──backend-deployment.yaml
-├  ├──backend-service.yaml
-├  ├──requirements.txt
-├   ├──static/
-├     │── public/ 
-├     ├── index.html 
-├     ├── script.js 
-├     ├── style.css
-├──Frontend/
-├   ├──frontend-deployment.yaml
-├   ├──frontend- service.yaml
-├   ├──-Dockerfile
-
 
   ### Overview:- 
   Developing a web application involving a frontend, backend, and a database connection. We are containerizating the application component by Docker and then deploying it to kubernetes cluster and using the GitHub for version control.
@@ -80,4 +62,4 @@ Login to Frontend pod and test the backend API endpoint using curl :
 curl X POST http:// backendservice.default.svc.cluster.local:5000/submit H "ContentType: application/json" d '{"value1": "test1", "value2": "test2"}'
 
 ###Connect to the database and check the data in the postgre schema
- 
+
