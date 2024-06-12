@@ -20,8 +20,9 @@
    
 Create  a Dockerfile (frontend/Dockerfile) for frontend
 5. Build and push the Docker image to Google Container Registry (GCR):
-   docker build -t my-frontend .
-   docker push gcr.io/kunal-ica1/my-frontend:latest
+
+   1. docker build -t my-frontend .
+   2. docker push gcr.io/kunal-ica1/my-frontend:latest
    
 ### Develop a backend application
 1. Set up a simple Flask application that processes data received from the frontend.
